@@ -38,6 +38,17 @@ async function writeLocalRegistrations(
   }
 }
 
+function getSupabaseHeaders(serviceKey: string, extra?: Record<string, string>) {
+  const headers: Record<string, string> = {
+    apikey: serviceKey,
+    ...extra,
+  };
+  if (!serviceKey.startsWith("sb_")) {
+    headers.Authorization = `Bearer ${serviceKey}`;
+  }
+  return headers;
+}
+
 export async function saveRegistration(
   record: RegistrationRecord
 ): Promise<{ storage: "supabase" | "local"; record: RegistrationRecord }> {
@@ -49,10 +60,7 @@ export async function saveRegistration(
     const edRes = await fetch(
       `${supabaseUrl}/rest/v1/editions?year=eq.${record.editionYear}&select=id`,
       {
-        headers: {
-          apikey: serviceKey,
-          Authorization: `Bearer ${serviceKey}`,
-        },
+        headers: getSupabaseHeaders(serviceKey),
       }
     );
 
@@ -61,12 +69,10 @@ export async function saveRegistration(
       if (editions.length > 0) {
         const insertRes = await fetch(`${supabaseUrl}/rest/v1/registrations`, {
           method: "POST",
-          headers: {
-            apikey: serviceKey,
-            Authorization: `Bearer ${serviceKey}`,
+          headers: getSupabaseHeaders(serviceKey, {
             "Content-Type": "application/json",
             Prefer: "return=representation",
-          },
+          }),
           body: JSON.stringify({
             id: record.id,
             edition_id: editions[0].id,
@@ -109,10 +115,7 @@ export async function listRegistrations(): Promise<RegistrationRecord[]> {
     const res = await fetch(
       `${supabaseUrl}/rest/v1/registrations?select=*,editions(year)&order=created_at.desc`,
       {
-        headers: {
-          apikey: serviceKey,
-          Authorization: `Bearer ${serviceKey}`,
-        },
+        headers: getSupabaseHeaders(serviceKey),
         cache: "no-store",
       }
     );
@@ -156,11 +159,9 @@ export async function updateRegistrationStatus(
       `${supabaseUrl}/rest/v1/registrations?id=eq.${encodeURIComponent(id)}`,
       {
         method: "PATCH",
-        headers: {
-          apikey: serviceKey,
-          Authorization: `Bearer ${serviceKey}`,
+        headers: getSupabaseHeaders(serviceKey, {
           "Content-Type": "application/json",
-        },
+        }),
         body: JSON.stringify({ status, updated_at: new Date().toISOString() }),
       }
     );
