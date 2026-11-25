@@ -1,0 +1,570 @@
+import type { Edition } from "@/types/rse";
+
+export const EDITIONS: Edition[] = [
+  {
+    id: "edition-2027",
+    year: 2027,
+    editionNumber: 4,
+    slug: "2027",
+    title: "4e édition — Vitrine RSE 2027",
+    theme:
+      "RSE et Changements climatiques, cadre réglementaire pour les États et les entreprises",
+    status: "inscriptions_ouvertes",
+    dateLabel: "3, 4 et 5 juin 2027",
+    startDate: "2027-06-03",
+    endDate: "2027-06-05",
+    location: "Salle des fêtes de Ouaga 2000",
+    city: "Ouagadougou, Burkina Faso",
+    posterUrl: "/images/editions/2027/affiche-4e-edition.jpg",
+    bannerUrl: "/images/editions/2027/banniere-4e-edition.jpg",
+    summary:
+      "Face à l’urgence climatique, la 4e édition de Vitrine RSE réunit décideurs publics, entreprises, experts, ONG et startups autour du cadre réglementaire, de la transition bas-carbone, de la finance durable et de la 1re édition de la Foire Commerciale de la Performance des Entreprises (FCPE).",
+    highlights: [
+      "6 Panels de haut niveau sur la réglementation, la décarbonation, la finance durable et l’économie circulaire",
+      "Communications d’entreprises : une tribune pour valoriser vos actions et votre savoir-faire",
+      "1re édition de la Foire Commerciale de la Performance des Entreprises (FCPE) sur 3 jours",
+      "Session de formation sur les bonnes pratiques d’hygiène et de fabrication dans l’agroalimentaire",
+      "Cérémonie de remise des trophées Vitrine RSE et des prix aux lauréats de la FCPE",
+    ],
+    regulatoryContext: [
+      "Plan National d’Adaptation (PNA) adopté en 2015 et relu en 2021 : partenariat, durabilité, gestion axée sur les résultats, genre et inclusion sociale.",
+      "Loi sur le développement durable : intégration de l’écologie dans les activités économiques.",
+      "EIES obligatoire : évaluation des risques environnementaux et sociaux pour tout projet à impact potentiel.",
+      "Normes HSE et référentiels ISO 9000 (qualité), ISO 14000 (environnement) et ISO 26000 (responsabilité sociétale).",
+    ],
+    program: [
+      // Jour 1 — Jeudi 3 juin 2027
+      {
+        id: "j1-1",
+        dayNumber: 1,
+        dayLabel: "Jeudi 3 juin 2027 — 1er jour",
+        actNumber: "Acte 1",
+        timeRange: "08h00 – 10h00",
+        title: "Cérémonie d’ouverture officielle",
+        type: "ceremonie",
+      },
+      {
+        id: "j1-2",
+        dayNumber: 1,
+        dayLabel: "Jeudi 3 juin 2027 — 1er jour",
+        actNumber: "Acte 2",
+        timeRange: "10h00 – 10h30",
+        title: "Visite officielle des stands (FCPE)",
+        type: "exposition",
+      },
+      {
+        id: "j1-2b",
+        dayNumber: 1,
+        dayLabel: "Jeudi 3 juin 2027 — 1er jour",
+        timeRange: "10h30 – 11h00",
+        title: "Interviews médias et pause-café",
+        type: "reseautage",
+      },
+      {
+        id: "j1-3",
+        dayNumber: 1,
+        dayLabel: "Jeudi 3 juin 2027 — 1er jour",
+        actNumber: "Acte 3",
+        timeRange: "11h00 – 11h30",
+        title:
+          "Conférence inaugurale : « RSE et changements climatiques, quel cadre réglementaire pour les États et les entreprises ? »",
+        type: "conference",
+      },
+      {
+        id: "j1-4",
+        dayNumber: 1,
+        dayLabel: "Jeudi 3 juin 2027 — 1er jour",
+        actNumber: "Acte 4",
+        timeRange: "11h45 – 12h15",
+        title:
+          "Panel 1 : « Les entreprises face aux changements climatiques : de la conformité réglementaire à la performance RSE ? »",
+        type: "panel",
+      },
+      {
+        id: "j1-5",
+        dayNumber: 1,
+        dayLabel: "Jeudi 3 juin 2027 — 1er jour",
+        actNumber: "Acte 5",
+        timeRange: "12h30 – 13h00",
+        title: "Pause déjeuner",
+        type: "reseautage",
+      },
+      {
+        id: "j1-6",
+        dayNumber: 1,
+        dayLabel: "Jeudi 3 juin 2027 — 1er jour",
+        actNumber: "Acte 6",
+        timeRange: "13h00 – 13h15",
+        title: "Communication d’entreprise",
+        type: "communication",
+      },
+      {
+        id: "j1-7",
+        dayNumber: 1,
+        dayLabel: "Jeudi 3 juin 2027 — 1er jour",
+        actNumber: "Acte 7",
+        timeRange: "13h30 – 14h15",
+        title:
+          "Panel 2 : « La décarbonation des entreprises africaines : stratégies, technologies et solutions concrètes »",
+        type: "panel",
+      },
+      {
+        id: "j1-8",
+        dayNumber: 1,
+        dayLabel: "Jeudi 3 juin 2027 — 1er jour",
+        actNumber: "Acte 8",
+        timeRange: "14h15 – 14h45",
+        title: "Communication : « Changements climatiques : s’adapter ou périr »",
+        type: "communication",
+      },
+      {
+        id: "j1-9",
+        dayNumber: 1,
+        dayLabel: "Jeudi 3 juin 2027 — 1er jour",
+        actNumber: "Acte 9",
+        timeRange: "14h45 – 15h00",
+        title: "Communication d’entreprise",
+        type: "communication",
+      },
+      {
+        id: "j1-10",
+        dayNumber: 1,
+        dayLabel: "Jeudi 3 juin 2027 — 1er jour",
+        actNumber: "Acte 10",
+        timeRange: "15h00 – 15h45",
+        title:
+          "Panel 3 : « Finance durable et climat : comment financer la transition écologique des États et des entreprises ? »",
+        type: "panel",
+      },
+      {
+        id: "j1-10b",
+        dayNumber: 1,
+        dayLabel: "Jeudi 3 juin 2027 — 1er jour",
+        timeRange: "15h45 – 16h00",
+        title: "Communication d’entreprise",
+        type: "communication",
+      },
+      {
+        id: "j1-11",
+        dayNumber: 1,
+        dayLabel: "Jeudi 3 juin 2027 — 1er jour",
+        actNumber: "Acte 11",
+        timeRange: "16h00",
+        title: "Résumé de la 1re journée et annonce du programme de la 2e journée",
+        type: "ceremonie",
+      },
+      // Jour 2 — Vendredi 4 juin 2027
+      {
+        id: "j2-1",
+        dayNumber: 2,
+        dayLabel: "Vendredi 4 juin 2027 — 2e jour",
+        actNumber: "Acte 1",
+        timeRange: "08h30 – 08h45",
+        title:
+          "Communication : « Cadre réglementaire de la RSE face aux changements climatiques : comment accompagner les entreprises vers une Responsabilité Élargie des Producteurs (REP) ? »",
+        type: "communication",
+      },
+      {
+        id: "j2-2",
+        dayNumber: 2,
+        dayLabel: "Vendredi 4 juin 2027 — 2e jour",
+        actNumber: "Acte 2",
+        timeRange: "09h00 – 09h30",
+        title:
+          "Panel 4 : « RSE, ESG et reporting extra-financier : vers de nouvelles exigences de transparence et de responsabilités »",
+        type: "panel",
+      },
+      {
+        id: "j2-3",
+        dayNumber: 2,
+        dayLabel: "Vendredi 4 juin 2027 — 2e jour",
+        actNumber: "Acte 3",
+        timeRange: "09h30 – 09h45",
+        title:
+          "Communication : « Cadres réglementaires et politiques climatiques en Afrique : de l’engagement international à l’action nationale »",
+        type: "communication",
+      },
+      {
+        id: "j2-4",
+        dayNumber: 2,
+        dayLabel: "Vendredi 4 juin 2027 — 2e jour",
+        actNumber: "Acte 4",
+        timeRange: "09h45 – 10h00",
+        title:
+          "Communication : « Transition énergétique et souveraineté économique en Afrique : quelle contribution de la RSE ? »",
+        type: "communication",
+      },
+      {
+        id: "j2-5",
+        dayNumber: 2,
+        dayLabel: "Vendredi 4 juin 2027 — 2e jour",
+        actNumber: "Acte 5",
+        timeRange: "10h00 – 10h30",
+        title:
+          "Panel 5 : « Adaptation au changement climatique et résilience des territoires : quel rôle pour les entreprises ? »",
+        type: "panel",
+      },
+      {
+        id: "j2-5b",
+        dayNumber: 2,
+        dayLabel: "Vendredi 4 juin 2027 — 2e jour",
+        timeRange: "10h30 – 10h45",
+        title: "Communication d’entreprise",
+        type: "communication",
+      },
+      {
+        id: "j2-6",
+        dayNumber: 2,
+        dayLabel: "Vendredi 4 juin 2027 — 2e jour",
+        actNumber: "Acte 6",
+        timeRange: "10h45 – 11h00",
+        title:
+          "Communication : « Quel modèle africain de RSE face aux changements climatiques ? »",
+        type: "communication",
+      },
+      {
+        id: "j2-7",
+        dayNumber: 2,
+        dayLabel: "Vendredi 4 juin 2027 — 2e jour",
+        actNumber: "Acte 7",
+        timeRange: "11h00 – 11h15",
+        title: "Communication d’entreprise",
+        type: "communication",
+      },
+      {
+        id: "j2-8",
+        dayNumber: 2,
+        dayLabel: "Vendredi 4 juin 2027 — 2e jour",
+        actNumber: "Acte 8",
+        timeRange: "11h15 – 11h30",
+        title: "Communication d’entreprise",
+        type: "communication",
+      },
+      {
+        id: "j2-9",
+        dayNumber: 2,
+        dayLabel: "Vendredi 4 juin 2027 — 2e jour",
+        actNumber: "Acte 9",
+        timeRange: "11h30 – 12h30",
+        title: "Déjeuner",
+        type: "reseautage",
+      },
+      {
+        id: "j2-10",
+        dayNumber: 2,
+        dayLabel: "Vendredi 4 juin 2027 — 2e jour",
+        actNumber: "Acte 10",
+        timeRange: "12h30 – 13h00",
+        title:
+          "Communication : « RSE et changements climatiques dans le secteur de l’agriculture : quelles stratégies pour une agriculture durable, résiliente et responsable en Afrique ? »",
+        type: "communication",
+      },
+      {
+        id: "j2-11",
+        dayNumber: 2,
+        dayLabel: "Vendredi 4 juin 2027 — 2e jour",
+        actNumber: "Acte 11",
+        timeRange: "13h00 – 13h30",
+        title:
+          "Panel 6 : « Économie circulaire, gestion des déchets et biodiversité : transformer les défis environnementaux en opportunités économiques »",
+        type: "panel",
+      },
+      {
+        id: "j2-12",
+        dayNumber: 2,
+        dayLabel: "Vendredi 4 juin 2027 — 2e jour",
+        actNumber: "Acte 12",
+        timeRange: "13h30 – 14h00",
+        title:
+          "Communication : « RSE et changements climatiques : quelles nouvelles obligations pour les États et les entreprises ? »",
+        type: "communication",
+      },
+      {
+        id: "j2-13",
+        dayNumber: 2,
+        dayLabel: "Vendredi 4 juin 2027 — 2e jour",
+        actNumber: "Acte 13",
+        timeRange: "14h00",
+        title: "Communication d’entreprise",
+        type: "communication",
+      },
+      {
+        id: "j2-14",
+        dayNumber: 2,
+        dayLabel: "Vendredi 4 juin 2027 — 2e jour",
+        timeRange: "14h30",
+        title: "Résumé de la 2e journée et annonce du programme de la 3e journée",
+        type: "ceremonie",
+      },
+      // Jour 3 — Samedi 5 juin 2027
+      {
+        id: "j3-1",
+        dayNumber: 3,
+        dayLabel: "Samedi 5 juin 2027 — 3e jour",
+        timeRange: "08h00 – 08h30",
+        title:
+          "Accueil et installation des participants à la session de formation et de renforcement de capacités sur les « Bonnes pratiques d’hygiène et de fabrication dans l’agroalimentaire »",
+        type: "formation",
+      },
+      {
+        id: "j3-2",
+        dayNumber: 3,
+        dayLabel: "Samedi 5 juin 2027 — 3e jour",
+        timeRange: "08h30 – 09h00",
+        title: "Cérémonie d’ouverture de la session de formation",
+        type: "ceremonie",
+      },
+      {
+        id: "j3-3",
+        dayNumber: 3,
+        dayLabel: "Samedi 5 juin 2027 — 3e jour",
+        timeRange: "09h00 – 11h00",
+        title: "Tenue de la session de formation agroalimentaire",
+        type: "formation",
+      },
+      {
+        id: "j3-4",
+        dayNumber: 3,
+        dayLabel: "Samedi 5 juin 2027 — 3e jour",
+        timeRange: "08h00 – 18h00",
+        title:
+          "Suite et fin de la 1re édition de la Foire Commerciale de la Performance des Entreprises (FCPE)",
+        type: "exposition",
+      },
+      {
+        id: "j3-5",
+        dayNumber: 3,
+        dayLabel: "Samedi 5 juin 2027 — 3e jour",
+        timeRange: "15h00",
+        title:
+          "Cérémonie de remise des trophées Vitrine RSE et prix aux lauréats de la FCPE",
+        type: "trophee",
+      },
+      {
+        id: "j3-6",
+        dayNumber: 3,
+        dayLabel: "Samedi 5 juin 2027 — 3e jour",
+        timeRange: "16h00",
+        title: "Cérémonie de clôture de Vitrine RSE 2027",
+        type: "ceremonie",
+      },
+    ],
+    panels: [
+      {
+        id: "panel-1",
+        panelNumber: 1,
+        title:
+          "Les entreprises face aux changements climatiques : de la conformité réglementaire à la performance RSE ?",
+        scheduleLabel: "Jeudi 3 juin 2027 • 11h45 – 12h15",
+        mainQuestion:
+          "Comment transformer les contraintes réglementaires en avantages compétitifs pour et par les entreprises ?",
+        keyPoints: [
+          "Les stratégies pour performer dans un cadre normatif exigeant",
+          "Les contraintes réglementaires et opérationnelles rencontrées",
+          "Les solutions concrètes d’adaptation et de gouvernance",
+        ],
+      },
+      {
+        id: "panel-2",
+        panelNumber: 2,
+        title:
+          "La décarbonation des entreprises africaines : stratégies, technologies et solutions concrètes",
+        scheduleLabel: "Jeudi 3 juin 2027 • 13h30 – 14h15",
+        mainQuestion:
+          "Réduction des émissions, efficacité énergétique, énergies renouvelables et mobilité durable.",
+        keyPoints: [
+          "Les actions concrètes mises en œuvre par les entreprises",
+          "Les contraintes techniques et financières",
+          "Les solutions solaires, d’efficacité énergétique et de mobilité durable",
+        ],
+      },
+      {
+        id: "panel-3",
+        panelNumber: 3,
+        title:
+          "Finance durable et climat : comment financer la transition écologique des États et des entreprises ?",
+        scheduleLabel: "Jeudi 3 juin 2027 • 15h00 – 15h45",
+        mainQuestion:
+          "Green bonds, ESG, banques, investisseurs, fonds climatiques et partenariats public-privé (PPP).",
+        keyPoints: [
+          "Existence et accessibilité de la finance durable au Burkina Faso et en Afrique de l’Ouest",
+          "Bénéficiaires éligibles, conditions d’emprunt et guichets disponibles",
+          "Rôle des PPP pour la captation de fonds et le financement des projets verts",
+        ],
+      },
+      {
+        id: "panel-4",
+        panelNumber: 4,
+        title:
+          "RSE, ESG et reporting extra-financier : vers de nouvelles exigences de transparence et de responsabilités",
+        scheduleLabel: "Vendredi 4 juin 2027 • 09h00 – 09h30",
+        mainQuestion:
+          "Indicateurs ESG, bilan carbone, reporting climatique, traçabilité et lutte contre le greenwashing.",
+        keyPoints: [
+          "Crédibilité des actions engagées par les entreprises",
+          "Impact auprès des consommateurs et limites actuelles du reporting",
+        ],
+      },
+      {
+        id: "panel-5",
+        panelNumber: 5,
+        title:
+          "Adaptation au changement climatique et résilience des territoires : quel rôle pour les entreprises ?",
+        scheduleLabel: "Vendredi 4 juin 2027 • 10h00 – 10h30",
+        mainQuestion:
+          "Agriculture, eau, infrastructures, villes, santé, sécurité alimentaire et résilience territoriale.",
+        keyPoints: [
+          "Constat et défis de la gestion des déchets dans les collectivités",
+          "Contribution des entreprises et des collectivités locales",
+          "Gestion durable des ressources en eau pour la sécurité alimentaire",
+        ],
+      },
+      {
+        id: "panel-6",
+        panelNumber: 6,
+        title:
+          "Économie circulaire, gestion des déchets et biodiversité : transformer les défis environnementaux en opportunités économiques",
+        scheduleLabel: "Vendredi 4 juin 2027 • 13h00 – 13h30",
+        mainQuestion:
+          "Déchets, recyclage, valorisation, économie des ressources et protection des écosystèmes.",
+        keyPoints: [
+          "Origines et provenance des déchets (DEEE, plastiques, déchets industriels)",
+          "Menaces écologiques et sanitaires",
+          "Les déchets comme leviers de création d’emplois et de valeur ajoutée",
+        ],
+      },
+    ],
+    gallery: [
+      {
+        id: "g-2027-affiche",
+        title: "Affiche officielle — 4e édition Vitrine RSE 2027",
+        type: "affiche",
+        url: "/images/editions/2027/affiche-4e-edition.jpg",
+        caption: "Visuel officiel 4e édition — 3, 4 et 5 juin 2027, Ouaga 2000",
+      },
+      {
+        id: "g-2027-banniere",
+        title: "Bannière officielle — 4e édition Vitrine RSE 2027",
+        type: "affiche",
+        url: "/images/editions/2027/banniere-4e-edition.jpg",
+        caption: "Bannière grand format — Panels, Communications & F.C.P.E",
+      },
+    ],
+    isFeatured: true,
+    registrationOpen: true,
+  },
+  {
+    id: "edition-2026",
+    year: 2026,
+    editionNumber: 3,
+    slug: "2026",
+    title: "3e édition — Vitrine RSE 2026",
+    theme: "Économie circulaire et Responsabilité Sociale des Entreprises",
+    status: "archivee",
+    dateLabel: "4 – 5 juin 2026",
+    startDate: "2026-06-04",
+    endDate: "2026-06-05",
+    location: "Azalaï Hôtel Ouagadougou",
+    city: "Ouagadougou, Burkina Faso",
+    posterUrl: "/images/affiches/visuel-officiel.jpg",
+    bannerUrl: "/images/hero-vitrine-rse.jpg",
+    summary:
+      "La 3e édition de Vitrine RSE a rassemblé entreprises, institutions, ONG, startups et porteurs de projets à l’Azalaï Hôtel Ouagadougou autour des solutions d’économie circulaire (réduction, réutilisation, recyclage, valorisation) et des pratiques RSE applicables.",
+    highlights: [
+      "Conférences et panels sur l’économie circulaire et les pratiques RSE au Burkina Faso",
+      "Remise des Prix Vitrine RSE 2026",
+      "Participation institutionnelle renforcée (Commune de Ouagadougou, ANSSEAT, AMR)",
+      "Stands d’exposition et rencontres B2B",
+    ],
+    gallery: [
+      {
+        id: "g-2026-1",
+        title: "Visuel officiel — 3e édition 2026",
+        type: "affiche",
+        url: "/images/affiches/visuel-officiel.jpg",
+      },
+      {
+        id: "g-2026-2",
+        title: "Prix Vitrine RSE 2026",
+        type: "affiche",
+        url: "/images/affiches/prix-vitrine-rse.jpg",
+      },
+      {
+        id: "g-2026-3",
+        title: "Panel 1 — Vitrine RSE 2026",
+        type: "affiche",
+        url: "/images/affiches/panel-1.jpg",
+      },
+      {
+        id: "g-2026-4",
+        title: "Panel 2 — Vitrine RSE 2026",
+        type: "affiche",
+        url: "/images/affiches/panel-2.jpg",
+      },
+      {
+        id: "g-2026-v1",
+        title: "Vidéo officielle — Vitrine RSE",
+        type: "video",
+        url: "https://www.youtube.com/embed/K6dSzm2sR90",
+      },
+      {
+        id: "g-2026-v2",
+        title: "Rétrospective & temps forts",
+        type: "video",
+        url: "https://www.youtube.com/embed/pgaYKfbbvQ8",
+      },
+      {
+        id: "g-2026-v3",
+        title: "Reportage et témoignages",
+        type: "video",
+        url: "https://www.youtube.com/embed/hj_reK0QRC4",
+      },
+    ],
+    isFeatured: false,
+    registrationOpen: false,
+  },
+  {
+    id: "edition-2025",
+    year: 2025,
+    editionNumber: 2,
+    slug: "2025",
+    title: "2e édition — Vitrine RSE 2025",
+    theme: null,
+    status: "archivee",
+    dateLabel: "2025 (dates exactes à confirmer dans les archives)",
+    location: "Ouagadougou",
+    city: "Ouagadougou, Burkina Faso",
+    summary:
+      "Deuxième édition annuelle de Vitrine RSE organisée par l’INGRIDD à Ouagadougou, poursuivant la structuration du dialogue entre acteurs économiques et institutionnels autour de la responsabilité sociétale.",
+    isFeatured: false,
+    registrationOpen: false,
+    missingArchiveNotice:
+      "Le thème officiel, les dates exactes, le programme détaillé et les photos d’archives de la 2e édition (2025) doivent être importés depuis les archives officielles d’INGRIDD via le tableau de bord d’administration.",
+  },
+  {
+    id: "edition-2024",
+    year: 2024,
+    editionNumber: 1,
+    slug: "2024",
+    title: "1re édition — Vitrine RSE 2024",
+    theme: null,
+    status: "archivee",
+    dateLabel: "2024 (dates exactes à confirmer dans les archives)",
+    location: "Ouagadougou",
+    city: "Ouagadougou, Burkina Faso",
+    summary:
+      "Édition fondatrice de Vitrine RSE lancée par l’INGRIDD en 2024 à Ouagadougou pour poser les bases d’une plateforme nationale de référence dédiée à la RSE et au développement durable au Burkina Faso.",
+    isFeatured: false,
+    registrationOpen: false,
+    missingArchiveNotice:
+      "Le thème officiel, les dates exactes, le bilan et les visuels de la 1re édition (2024) doivent être complétés par l’équipe d’organisation depuis l’espace d’administration.",
+  },
+];
+
+export function getFeaturedEdition(): Edition {
+  return EDITIONS.find((e) => e.isFeatured) ?? EDITIONS[0];
+}
+
+export function getEditionByYear(year: number): Edition | undefined {
+  return EDITIONS.find((e) => e.year === year);
+}
