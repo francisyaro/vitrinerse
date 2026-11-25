@@ -469,14 +469,78 @@ export const EDITIONS: Edition[] = [
     posterUrl: "/images/affiches/visuel-officiel.jpg",
     bannerUrl: "/images/hero-vitrine-rse.jpg",
     summary:
-      "La 3e édition de Vitrine RSE a rassemblé entreprises, institutions, ONG, startups et porteurs de projets à l’Azalaï Hôtel Ouagadougou autour des solutions d’économie circulaire (réduction, réutilisation, recyclage, valorisation) et des pratiques RSE applicables.",
+      "Tenue les 4 et 5 juin 2026 à l’Azalaï Hôtel Ouagadougou sous la présidence de M. Maurice Konaté (PDS de la commune de Ouagadougou) et le parrainage du Pr Élie Kabré (Directeur Général de l’ANSSEAT), la 3e édition de Vitrine RSE a réuni entreprises, institutions, ONG, startups et porteurs de projets autour de l’économie circulaire et de la RSE.",
     highlights: [
-      "Conférences et panels sur l’économie circulaire et les pratiques RSE au Burkina Faso",
-      "Remise des Prix Vitrine RSE 2026",
-      "Participation institutionnelle renforcée (Commune de Ouagadougou, ANSSEAT, AMR)",
-      "Stands d’exposition et rencontres B2B",
+      "Présidence : M. Maurice Konaté (PDS de la commune de Ouagadougou) • Parrainage : Pr Élie Kabré (DG de l’ANSSEAT)",
+      "Panels d’experts sur la gestion des déchets, les chaînes de valeur agricoles/élevage et l’économie circulaire (Salle Kadiogo)",
+      "Remise des Trophées Vitrine RSE 2026 aux entreprises et organisations lauréates",
+      "Exposition de stands d’entreprises et startups engagées (dont As’soué Group, valorisation et recyclage de pneus)",
+    ],
+    panels: [
+      {
+        id: "2026-panel-1",
+        panelNumber: 1,
+        title:
+          "Gestion des déchets et économie circulaire, quelle est la contribution des chaînes de valeur à la RSE ?",
+        scheduleLabel: "4 juin 2026 • 11h45 • Salle Kadiogo",
+        mainQuestion:
+          "Modéré par Dr Oumar Sanogo avec Hien Nyeaza Diane (AFE/BF), M. Ouattara D. Omar, M. Cissé S. Mahamadou et M. Djekourboyom William (Miensai / Côte d’Ivoire Circulaire).",
+        keyPoints: [
+          "Structuration des filières de gestion des déchets et économie circulaire",
+          "Contribution des chaînes de valeur à la performance RSE",
+        ],
+      },
+      {
+        id: "2026-panel-2",
+        panelNumber: 2,
+        title:
+          "La gestion et la valorisation des déchets dans les secteurs de l’élevage et de l’agriculture source de revenus et de croissance des chaînes de valeur ?",
+        scheduleLabel: "4 juin 2026 • 13h30 – 14h15 • Salle Kadiogo",
+        mainQuestion:
+          "Modéré par M. Hypolitte Tiendrebeogo (DPEFAPH) avec l’AMR, Ph.D. Rémy K. Bationo (IRSAT), Mme Badolo Saba Fatimata (SAFAS) et M. Benao B. Ibrahim (LPTP 3AE).",
+        keyPoints: [
+          "Valorisation des déchets agro-sylvo-pastoraux",
+          "Création de revenus et croissance durable des chaînes de valeur",
+        ],
+      },
     ],
     gallery: [
+      {
+        id: "g-2026-pleniere",
+        title: "Grande salle plénière — Azalaï Hôtel Ouagadougou",
+        type: "photo",
+        url: "/images/editions/2026/salle-pleniere-azalai-2026.jpg",
+      },
+      {
+        id: "g-2026-panel-scene",
+        title: "Panel d’experts sur scène — 3e édition 2026",
+        type: "photo",
+        url: "/images/editions/2026/panel-scene-2026.jpg",
+      },
+      {
+        id: "g-2026-intervenant",
+        title: "Intervention et échanges — Azalaï Hôtel",
+        type: "photo",
+        url: "/images/editions/2026/intervenant-scene-2026.jpg",
+      },
+      {
+        id: "g-2026-stand-assoue",
+        title: "Stand As’soué Group — Recyclage et économie circulaire",
+        type: "photo",
+        url: "/images/editions/2026/stand-assoue-group-2026.jpg",
+      },
+      {
+        id: "g-2026-participant",
+        title: "Participant lors des travaux — 3e édition 2026",
+        type: "photo",
+        url: "/images/editions/2026/participant-officiel-2026.jpg",
+      },
+      {
+        id: "g-2026-laureats",
+        title: "Photo de famille des lauréats des Prix Vitrine RSE 2026",
+        type: "photo",
+        url: "/images/editions/2026/laureats-trophees-2026.jpg",
+      },
       {
         id: "g-2026-1",
         title: "Visuel officiel — 3e édition 2026",
