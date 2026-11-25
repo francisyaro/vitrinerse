@@ -534,12 +534,50 @@ export const EDITIONS: Edition[] = [
     dateLabel: "2025 (dates exactes à confirmer dans les archives)",
     location: "Ouagadougou",
     city: "Ouagadougou, Burkina Faso",
+    posterUrl: "/images/editions/2025/photocall-partenaires-1-2025.jpg",
     summary:
-      "Deuxième édition annuelle de Vitrine RSE organisée par l’INGRIDD à Ouagadougou, poursuivant la structuration du dialogue entre acteurs économiques et institutionnels autour de la responsabilité sociétale.",
+      "Deuxième édition annuelle de Vitrine RSE (« Vitrine RSE, un concept INGRIDD ») organisée à Ouagadougou avec la participation de nombreux partenaires institutionnels, miniers, financiers et associatifs (IAMGOLD Essakane SA, ITIE-BF, ONEA, UBA, Bank Of Africa, Moov Africa, Nestlé, La Poste Burkina Faso, SPONG, CNPB, ANEVE).",
+    highlights: [
+      "Forte mobilisation des partenaires publics et privés : ministères en charge de l’Énergie/Mines et de l’Industrie/Commerce, ITIE-BF, ANEVE, ONEA",
+      "Participation active du secteur privé et financier : IAMGOLD Essakane SA, UBA, Bank Of Africa, Moov Africa, Nestlé, RCPB, CNPB",
+      "Rencontres et échanges en salle avec les parties prenantes RSE",
+    ],
+    gallery: [
+      {
+        id: "g-2025-salle",
+        title: "Participants en salle — 2e édition Vitrine RSE 2025",
+        type: "photo",
+        url: "/images/editions/2025/participants-salle-2025.jpg",
+      },
+      {
+        id: "g-2025-photocall-1",
+        title: "Mur des partenaires officiels — 2e édition 2025",
+        type: "photo",
+        url: "/images/editions/2025/photocall-partenaires-1-2025.jpg",
+      },
+      {
+        id: "g-2025-photocall-2",
+        title: "Échanges devant le mur des partenaires — 2e édition",
+        type: "photo",
+        url: "/images/editions/2025/photocall-partenaires-2-2025.jpg",
+      },
+      {
+        id: "g-2025-photocall-3",
+        title: "Participante devant le panneau Nos Partenaires — 2025",
+        type: "photo",
+        url: "/images/editions/2025/photocall-partenaires-3-2025.jpg",
+      },
+      {
+        id: "g-2025-photocall-4",
+        title: "Portrait devant le panneau officiel des partenaires — 2025",
+        type: "photo",
+        url: "/images/editions/2025/photocall-partenaires-4-2025.jpg",
+      },
+    ],
     isFeatured: false,
     registrationOpen: false,
     missingArchiveNotice:
-      "Le thème officiel, les dates exactes, le programme détaillé et les photos d’archives de la 2e édition (2025) doivent être importés depuis les archives officielles d’INGRIDD via le tableau de bord d’administration.",
+      "Le thème officiel et les dates exactes de la 2e édition (2025) peuvent être complétés dès que le visuel principal ou les TDR 2025 seront disponibles.",
   },
   {
     id: "edition-2024",
