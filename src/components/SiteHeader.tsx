@@ -76,7 +76,7 @@ export function SiteHeader() {
               Vitrine <span className="text-[#115338]">RSE</span>
             </span>
             <span className="block text-[11px] font-medium text-slate-500">
-              Initiative de l’INGRIDD • Burkina Faso
+              Initiative de INGRIDD • Burkina Faso
             </span>
           </div>
         </Link>
